@@ -9,6 +9,8 @@ about their health and habits.
 - [Ask](#ask)
 - [Prepare](#prepare)
 - [Process](#process)
+- [Analyze](#analyze)
+- [Share and Act](#share_and_act)
 
 
 ## Ask
@@ -115,5 +117,84 @@ I summarized the merged table to check the data and make sure it's ready for ana
 `summary(daily_merged)`
 
 ![Summary Merged](https://user-images.githubusercontent.com/86019532/122691695-4afea480-d1ff-11eb-9082-c38d2e37f850.png)
+
+## Analyze
+
+I wanted to see how the average user used their time throughout an average day. I took the mean from each activity time metric inlcuding the amount of
+sleep from each recorded data row to create a new data frame table. Used the new table to create a column graph to showcase the differences between the different
+activity types. 
+
+`Average_Activity_Minutes <- c(21,14,193,991,419)`
+
+`Activity_Names <- c("Very","Fairly","Lightly","Sedentary","Sleeping")`
+
+`Average_Intensity <- data.frame(Average_Activity_Minutes, Activity_Names)`
+
+`ggplot(data= Average_Intensity)+`
+
+  `geom_col(aes(x=Average_Activity_Minutes,y=Activity_Names,fill=Activity_Names))+`
+  
+  `labs(title="Average Intensity",x="Minutes per day",y="Activity Type")`
+  
+![Average Intensity Graph](https://user-images.githubusercontent.com/86019532/122692918-8f8d3e80-d205-11eb-983a-e9d772865825.png)
+
+The graph shows the average user, from the dataset we're working with, how they spend their day wearing their FitBit. The average user spends 16% of their day active
+whether that be Very, Fairly, or Lightly active. They also spend 69% of their recorded day Sedentary.
+
+Next I wanted to see the ratio between Active minutes and Sedentary minutes. I didn't take the average because I wanted to see each individual data point.
+Checking the ratio will allow you to see how many people record their activity compared to them being sedentary. Creating a histogram with the ratio on the
+x axis and Density or number of users on the y axis
+
+`Activity_Minutes <- c(daily_merged$VeryActiveMinutes + daily_merged$FairlyActiveMinutes + daily_merged$LightlyActiveMinutes)`
+
+`Activity_Minutes_Ratio <- c(Activity_Minutes/daily_merged$SedentaryMinutes)`
+
+`ggplot(data=daily_merged)+`
+
+  `geom_histogram(mapping=aes(x=Activity_Minutes_Ratio,y=..density..),fill="orange")+`
+  
+  `labs(title="Ratio of Active Minutes vs Sedentary Minutes",x="Ratio",y="Density")`
+  
+![Ratio Active vs Sedentary Graph](https://user-images.githubusercontent.com/86019532/122693707-efd1af80-d208-11eb-84fe-8477c6d0468c.png)
+
+Checking the ratio shows how most users spend their time Active. Most users spend less than 33% of their time wearing the FitBit being Active.
+Some of the data points show a few users spening most of or an equal amount of time being Active rather than Sedentary. We need more data points
+to check if users only wear their FitBit during exercise.
+
+After that I wanted to check the average user's Activity compared to the Distance they travelled while active. Creating another column graph to see how much people
+travel using 3 metrics of Very, Moderately, and Light activity distance travelled. I included Total Distance to compare each metric to the total.
+
+`Average_Activity_Distance <- c(1.5,0.5,3.3,5.5)`
+
+`Distance_Names <- c("Very","Moderately","Light","Total")`
+
+`Average_Distance <- data.frame(Average_Activity_Distance,Distance_Names)`
+
+`ggplot(data=Average_Distance)+`
+
+  `geom_col(mapping=aes(x=Average_Activity_Distance,y=Distance_Names,fill=Distance_Names))+`
+  
+  `labs(title="Average Distance",x="Distance in km",y="Distance Type")+`
+  
+  `annotate("text",x=3,y="Total",label="Total Distance is 5.5km")`
+
+![Average Distance Graph](https://user-images.githubusercontent.com/86019532/122694646-0c231b80-d20c-11eb-9f0f-4bf31db0c027.png)
+
+The majority activity type based on distance travelled was Light activity of 60%. The Moderate activity type only contributed to 10% of the Total Distance travelled.
+Showing that the average user spends most of their time travelling either by light or very active activity.
+
+## Share and Act
+
+Our first [graph](https://user-images.githubusercontent.com/86019532/122692918-8f8d3e80-d205-11eb-983a-e9d772865825.png) shows us a vast majority of time FitBit users spend their time wearing their FitBit being Sedentary and not active.
+Also shows in our data thatmost FitBit users don't wear it while they sleep. BellaBeat could collect more data on FitBit users or their own users to better understand why their customers don't wear smart devices overnight. If there was a clear benefit of wearing a smart device while you sleep that would put BelleBeat at a distinct advantage over
+FitBit. Also if BelleBeat showed the benefits of exercise or reminded users to be more active while wearing the device, it would give their customers more data
+about their health and habits which is one of their main goals at BelleBeat.
+
+The second [graph](https://user-images.githubusercontent.com/86019532/122692918-8f8d3e80-d205-11eb-983a-e9d772865825.png) shows that people wear their FitBit 
+most of the day but they aren't active nearly as much as they are sedentary. It also shows that some of their users only wear their smart device during exercise,
+which is probably because they want to track other factors such as heart rate. But those are a lot of assumptions, we need more data points to find exactly why this is.
+BellaBeat should encourage users to wear their smart device throughout the day to keep a consistent measurement of their activity.
+
+
 
 
