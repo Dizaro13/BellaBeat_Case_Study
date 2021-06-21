@@ -2,7 +2,7 @@
 ### Donovan Parsons - 6/20/2021
 ## Introduction
 ***BellaBeat*** - Urška Sršen and Sando Mur founded Bellabeat, a high-tech company that manufactures health-focused smart products for women.
-Collecting data on activity, sleep, stress and reproductive health has allowed BellaBeat to create products that help women be more knowledgable
+Collecting data on activity, sleep, stress and reproductive health has allowed BellaBeat to create products that help women be more knowledgeable
 about their health and habits.
 
 ## Table of contents
@@ -121,7 +121,7 @@ I summarized the merged table to check the data and make sure it's ready for ana
 
 ## Analyze
 
-I wanted to see how the average user used their time throughout an average day. I took the mean from each activity time metric inlcuding the amount of
+I wanted to see how the average user used their time throughout an average day. I took the mean from each activity time metric including the amount of
 sleep from each recorded data row to create a new data frame table. Used the new table to create a column graph to showcase the differences between the different
 activity types. 
 
@@ -159,7 +159,7 @@ x axis and Density or number of users on the y axis
 ![Ratio Active vs Sedentary Graph](https://user-images.githubusercontent.com/86019532/122693707-efd1af80-d208-11eb-84fe-8477c6d0468c.png)
 
 Checking the ratio shows how most users spend their time Active. Most users spend less than 33% of their time wearing the FitBit being Active.
-Some of the data points show a few users spening most of or an equal amount of time being Active rather than Sedentary. We need more data points
+Some of the data points show a few users spending most of or an equal amount of time being Active rather than Sedentary. We need more data points
 to check if users only wear their FitBit during exercise.
 
 After that I wanted to check the average user's Activity compared to the Distance they travelled while active. Creating another column graph to see how much people
@@ -187,9 +187,9 @@ Showing that the average user spends most of their time travelling either by lig
 ## Act
 
 Our first [graph](https://user-images.githubusercontent.com/86019532/122692918-8f8d3e80-d205-11eb-983a-e9d772865825.png) shows us a vast majority of time FitBit users spend their time wearing their FitBit being Sedentary and not active.
-Also shows in our data thatmost FitBit users don't wear it while they sleep. BellaBeat could collect more data on FitBit users or their own users to better understand why their customers don't wear smart devices overnight. If there was a clear benefit of wearing a smart device while you sleep that would put BelleBeat at a distinct advantage over
-FitBit. Also if BelleBeat showed the benefits of exercise or reminded users to be more active while wearing the device, it would give their customers more data
-about their health and habits which is one of their main goals at BelleBeat.
+Also shows in our data that most FitBit users don't wear it while they sleep. BellaBeat could collect more data on FitBit users or their own users to better understand why their customers don't wear smart devices overnight. If there was a clear benefit of wearing a smart device while you sleep that would put BellaBeat at a distinct advantage over
+FitBit. Also if BellaBeat showed the benefits of exercise or reminded users to be more active while wearing the device, it would give their customers more data
+about their health and habits which is one of their main goals at BellaBeat.
 
 The second [graph](https://user-images.githubusercontent.com/86019532/122692918-8f8d3e80-d205-11eb-983a-e9d772865825.png) shows that people wear their FitBit 
 most of the day but they aren't active nearly as much as they are sedentary. It also shows that some of their users only wear their smart device during exercise,
