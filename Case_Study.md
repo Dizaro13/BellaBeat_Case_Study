@@ -1,7 +1,7 @@
 # BellaBeat Case Study
 ### Donovan Parsons - 6/20/2021
 ## Introduction
-***BellaBeat*** Urška Sršen and Sando Mur founded Bellabeat, a high-tech company that manufactures health-focused smart products for women.
+***BellaBeat*** - Urška Sršen and Sando Mur founded Bellabeat, a high-tech company that manufactures health-focused smart products for women.
 Collecting data on activity, sleep, stress and reproductive health has allowed BellaBeat to create products that help women be more knowledgable
 about their health and habits.
 
