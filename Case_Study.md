@@ -10,7 +10,8 @@ about their health and habits.
 - [Prepare](#prepare)
 - [Process](#process)
 - [Analyze](#analyze)
-- [Share and Act](#share_and_act)
+- [Act](#act)
+- [Conclusion](#conclusion)
 
 
 ## Ask
@@ -183,7 +184,7 @@ travel using 3 metrics of Very, Moderately, and Light activity distance travelle
 The majority activity type based on distance travelled was Light activity of 60%. The Moderate activity type only contributed to 10% of the Total Distance travelled.
 Showing that the average user spends most of their time travelling either by light or very active activity.
 
-## Share and Act
+## Act
 
 Our first [graph](https://user-images.githubusercontent.com/86019532/122692918-8f8d3e80-d205-11eb-983a-e9d772865825.png) shows us a vast majority of time FitBit users spend their time wearing their FitBit being Sedentary and not active.
 Also shows in our data thatmost FitBit users don't wear it while they sleep. BellaBeat could collect more data on FitBit users or their own users to better understand why their customers don't wear smart devices overnight. If there was a clear benefit of wearing a smart device while you sleep that would put BelleBeat at a distinct advantage over
@@ -195,6 +196,18 @@ most of the day but they aren't active nearly as much as they are sedentary. It 
 which is probably because they want to track other factors such as heart rate. But those are a lot of assumptions, we need more data points to find exactly why this is.
 BellaBeat should encourage users to wear their smart device throughout the day to keep a consistent measurement of their activity.
 
+The third [chart](https://user-images.githubusercontent.com/86019532/122694646-0c231b80-d20c-11eb-9f0f-4bf31db0c027.png) has shown that FitBit users mostly travel
+by lightly walking or running. The lightly active and very active activity Distance reflect that most don't travel by moderate activity. This shows that walking and running
+are the most common type of travelling for FitBit users. BellaBeat could use this information by focusing on metrics that are runners are most interested in. We don't know 
+what most runners are interested in measuring because we don't have that data available. Although encouraging people to run or reminding them to run would probably benefit
+because users wearing their smart devices while running is something most customers want to measure. Again this is not a definite statement, we need more data before we are able
+to fully understand why FitBit users mostly either walk or run while wearing their smart device.
+
+## Conclusion
+
+The dataset that we analyzed was lacking but we were able to gather some useful insights into what FitBit users are using their smart device for. BellaBeat could use this
+analysis to make general observations of users with metrics such as Activity Distance, Activity Time, Sleep Time, and weight. More data should be gathered before making a
+decision on implementing new technology using this data into their products.
 
 
 
