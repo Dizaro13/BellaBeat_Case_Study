@@ -47,7 +47,9 @@ each of the different metrics. Some include merged data from others, and since I
 `library(lubridate)`
 
 `daily_activity <- read.csv("C:/Users/Dizaro/Documents/R/R Coding/archive/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged.csv")`
+
 `daily_sleep <- read.csv("C:/Users/Dizaro/Documents/R/R Coding/archive/Fitabase Data 4.12.16-5.12.16/sleepDay_merged.csv")`
+
 `daily_weight <- read.csv("C:/Users/Dizaro/Documents/R/R Coding/archive/Fitabase Data 4.12.16-5.12.16/weightLogInfo_merged.csv")`
 
 After importing the data tables I wanted to check each one for their metrics and the data types I'll be working with
